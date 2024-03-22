@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>설문조사 양식</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <p></p>
+    </header>
+    <hr>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" name="name" id="name" placeholder="이름을 입력하세요">
+                <br>
+                <label for="email">이메일</label>
+                <input type="email" name="email" id="email" placeholder="메일을 입력하세요">
+            </fieldset>
+            <fieldset>
+                <legend>설문</legend>
+                <p>연령대가 어떻게 되십니까?</p>
+                <input type="radio" name="age" id="teen">
+                <label for="teen">10대</label>
+                <input type="radio" name="age" id="twenty">
+                <label for="twenty">20대</label>
+                <input type="radio" name="age" id="thirty">
+                <label for="thirty">30대</label>
+                <input type="radio" name="age" id="fourty">
+                <label for="fourty">40대</label>
+                <input type="radio" name="age" id="fifty">
+                <label for="fifty">50대</label>
+                <input type="radio" name="age" id="other">
+                <label for="other">그 외</label>
+                <p>학원 선택 시 그 기준은 어떻게 되시나요?</p>
+                <input type="checkbox" name="academy" id="position">
+                <label for="position">위치</label>
+                <input type="checkbox" name="academy" id="price">
+                <label for="price">학원비</label>
+                <input type="checkbox" name="academy" id="teacher">
+                <label for="teacher">강사</label>
+                <input type="checkbox" name="academy" id="infra">
+                <label for="infra">시설</label>
+                <p>첫번 째로 달성하고 싶은 목표를 선택하세요.</p>
+                <input type="radio" name="subject" id="basic">
+                <label for="basic">왕초보 탈출</label>
+                <input type="radio" name="subject" id="grammer">
+                <label for="grammer">영문법 마스터</label>
+                <input type="radio" name="subject" id="toeic">
+                <label for="toeic">토익&토플 완성</label>
+                <input type="radio" name="subject" id="conversation">
+                <label for="conversation">영어회화 마스터</label>
+                
+            
+            </fieldset>
+            <fieldset>
+                <legend>기타 의견</legend>
+                <textarea name="contents" cols="30" rows="3"></textarea>
+            </fieldset>
+        </form> 
+    </main>
+    <hr>
+    <footer>
+        <p>입력하느라 수고하셨습니다.</p>
+    </footer>
+</body>
+</html>

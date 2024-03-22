@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 태그를 활용해 예시 화면의 기능 만들어보기</title>
+    <style>
+        body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 80%;
+        }
+        fieldset {
+            margin-top: 30px;
+            width: 350px;
+            padding: 50px;
+        }
+        a {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="aniaml">
+        <legend> 당신의 선택은 ?</legend>
+        <select name="animal" size="5" multiple>
+            <option value="">좋아하는 동물을 골라보세요</option>
+            <optgroup label="포유류">
+                <option value="dog">강아지</option>
+                <option value="car">고양이</option>
+                <option value="lion">사자</option>
+                <option value="camel">낙타</option>
+            </optgroup>
+            <hr>
+            <optgroup label="파충류">
+                <option value="iguana">이구아나</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset>
+        <h1>분야별 검색어</h1>
+        <p>안녕하세요 <br>
+            <a href="#">드라마</a>
+        </p>
+        
+        <ol>
+            <li>구미호뎐 1938</li>
+            <li>진짜가 나타났다</li>
+            <li>낭만닥터 김사부3</li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <h1>같이가치 추천글</h1>
+        <ul>
+            <li>어느 베트남 엄마의 멈추지 않는 눈물</li>
+            <li>조금은 특별한 우리의 여행</li>
+            <li>외로운 어르신, 가족의 손길을 선물해주세요</li>
+        </ul>
+    </fieldset>
+</body>
+</html>

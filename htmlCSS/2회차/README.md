@@ -9,7 +9,7 @@ D+2
 다른 문서로 이동하는 수단
 하이퍼텍스트 == 문서
 <a href="이동하고자 하는 페이지의 주소">
-hyper to reference
+hyper reference
 target : _self 현대탭  _blank 새ㅐ창
 기본값은 _self
 절대주소, 상대주소 모두 가능 => 상대주소에서 상위폴더로 가기 위해서는 ../

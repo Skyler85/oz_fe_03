@@ -27,6 +27,9 @@ p {
 </style> 
 문서간의 연결 : 스타일 시트 문서를 따로 작성하여 HTML 문서와 연결하기
 <link href="./style.css" rel="stylesheet"> // <head>내부에서 사용
+href : hyper reference 하이퍼 참조
+rel : relation 관계
+
 ## 선택자 기본편
 선택자 : 전체(*), 태그(div), 클래스(.button), 아이디(#id), 그룹(p, strong, ..) ...
 

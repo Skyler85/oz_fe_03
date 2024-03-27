@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="member.css" />
+    <link rel="stylesheet" href="signup.css" />
+
+    <title>회원가입</title>
+  </head>
+  <body>
+    <div class="container flex">
+      <header class="sign-header">
+        <h1><a href="member.html">< </a> 안녕하세요</h1>
+        <span>정보를 입력하세요.</span>
+      </header>
+      <main class="sign-main">
+        <form action="#" class="flex">
+          <label for="username" class="label required">
+            <span>Username</span>
+          </label>
+
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="영어소문자, 숫자만 가능합니다."
+            required
+          />
+
+          <label for="password1" class="label required">
+            <span>Password</span>
+          </label>
+
+          <input
+            type="password"
+            name="password1"
+            id="password1"
+            placeholder="비밀번호를 입력하세요"
+            required
+          />
+
+          <label for="password2" class="label required">
+            <span>Password</span>
+          </label>
+
+          <input
+            type="password"
+            name="password2"
+            id="password2"
+            placeholder="비밀번호를 한번 더 입력하세요"
+            required
+          />
+
+          <label for="email" class="label">
+            <span>email</span>
+          </label>
+
+          <input type="email" placeholder="abc@ggoogle.com" />
+
+          <label for="phone" class="label">
+            <span>phone</span>
+          </label>
+
+          <input type="text" placeholder="ex) 010-1234-5678" />
+
+          <div class="information flex">
+            <label for="info" class="label">
+              <span>info</span>
+            </label>
+            <textarea name="info" id="info">
+                간단한 자기소개를 남겨주세요.
+            </textarea>
+          </div>
+        </form>
+      </main>
+      <footer class="sign-footer">
+        <input type="submit" value="회원가입" />
+      </footer>
+    </div>
+  </body>
+</html>

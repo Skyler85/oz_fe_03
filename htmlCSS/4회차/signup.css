@@ -1,0 +1,66 @@
+/* header */
+header.sign-header{
+    margin-right: auto;
+    line-height: 3.5rem;
+}
+.container{
+    justify-content: space-between;
+}
+/* main */
+.sign-main{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 50px;
+}
+.sign-main form{
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    line-height: 2rem;
+}
+.sign-main .label {
+    width: 20%;
+    height: 60px;
+    position: relative;
+}
+.sign-main .required span::before{
+    content: "* ";
+    color: red;
+    font-weight: 900;
+    position: absolute;
+    left: -10px;
+    top: 4px
+}
+.sign-main form input{
+    width: 70%;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid var(--shadow-color);
+}
+
+.information{
+    width: 100%;
+    padding: 10px 20px;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.information textarea{
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+.sign-footer{
+    width: 100%;
+}
+.sign-footer input {
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+background: linear-gradient(0deg, rgb(117, 27, 227) 0%, rgb(235, 10, 197) 50%);
+box-shadow: inset 0 0 10px 0 var(--shadow-color);
+}   

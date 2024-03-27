@@ -11,7 +11,7 @@
 }
 .chat-screen__texts > .text {
     background-color: white;
-    width: 280px;
+    width: 45%;
     height: 50px;
     margin: 0 0 10px 0;
     padding: 10px;
@@ -22,16 +22,12 @@
 }
 
 .chat-screen__view {
-    overflow-x: hidden;
+    overflow-y: auto;
 }
 .send>li {
-    align-self: end;
+    align-self: flex-end;
     text-align: right;
 }
-.receive {
-
-}
-
 
 /* 태그를 사용하지 않고 의사요소를 사용하여 말풍선꼬리를 만들기 */
 .receive > .text::after{

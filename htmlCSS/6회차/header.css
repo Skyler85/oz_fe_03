@@ -9,11 +9,10 @@ header.header {
 
 .header-content {
     width: 100%;
-    max-width: 95rem;
+    max-width: 75rem;
     height: 4rem;
     padding: 0.75rem 1rem;
     margin: auto;
-
     justify-content: space-between;
 }
 .header-content__logo {
@@ -36,7 +35,7 @@ header.header {
 }
 .header-content__nav ul li {
     display: inline-block;
-    margin: 30px;
+    margin: 20px;
     font-size: 1.13rem;
     font-weight: 900;
 }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="text.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <main class="chat-screen">
+            <section class="chat-screen__bar">
+                <div class="user">
+                    <div class="user__column">
+                        <div class="user__pic"></div>
+                    </div>
+                    <div class="user__column">
+                        <p class="user__nick">친구</p>
+                        <p class="user__count">2</p>
+                    </div>
+                </div>
+            </section>
+            <section class="chat-screen__view">
+                <ul class="chat-screen__texts send ">
+                    <li class="text">친구야 오랜만이다. 반가워</li>
+                </ul>
+                <ul class="chat-screen__texts receive">
+                    <li class="text">우리 언제 밥이나 한번 먹어야자</li>
+                </ul>
+                <ul class="chat-screen__texts send">
+                    <li class="text">오! 좋아! 이번 주말 뭐해?</li>
+                </ul>
+                <ul class="chat-screen__texts receive">
+                    <li class="text">나 이번 주는 시험 준비 ㅠㅠ</li>
+                    <li class="text">다음주 목요일은 어때?</li>
+                </ul>
+                <ul class="chat-screen__texts send">
+                    <li class="text">응응 갠춘</li>
+                </ul>
+                <ul class="chat-screen__texts receive">
+                    <li class="text">ㅇㅋㅇㅋ</li>
+                    <li class="text">내가 시경이랑 동엽이도 부를게</li>
+                    <li class="text">광장에서 7시 ㅇㅋ?</li>
+                </ul>
+                <ul class="chat-screen__texts send">
+                    <li class="text">ㅇㅋ 목요일날 7시에 보자</li>
+                </ul>
+                <ul class="chat-screen__texts receive">
+                    <li class="text">늦으면 1차 쏘기다</li>
+                </ul>
+                <ul class="chat-screen__texts send">
+                    <li class="text">너나 잘하세요</li>
+                </ul>
+            </section>
+        </main>
+        <form class="chat-form">
+            <section class="chat-form__field">
+                <textarea class="chat-form__msg"></textarea>
+                <input type="submit" value="전송" class="chat-form__bt">
+            </section>
+        </form>
+    </div>
+</body>
+</html>

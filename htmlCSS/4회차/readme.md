@@ -47,3 +47,25 @@ overflow : 넘침현상을 해결하기 위한 속성
 
 ## 미니 프로젝트 - 나만의 채팅방 만들기
 색상, 글꼴, 개성을 살려서 나만의 채팅방 만들기
+
+https://htmlpreview.github.io/?https://github.com/Skyler85/oz_fe_03/blob/main/htmlCSS/4%ED%9A%8C%EC%B0%A8/chat.html
+
+
+## 사이드 프로젝트
+
+### 나만의 일기장 만들기
+html로 어느정도 구성을 갖추고 css를 하는데 배열에서 막혔다.... 또르르..ㅠ
+absolute를 활용하고 싶었는데, flex부터 너무 어려움.ㅠㅠ
+    display: inline-block;
+    width: 100%;
+    text-align: end;
+텍스트로 직접 적용했더니 안됨 ㅜㅜ
+[참고사이트](https://d2.naver.com/helloworld/8540176#ch5)
+
+main 영역 height : 100% 로 지정했는데 적용 안되서 100vh (view point) 했더니 적용 됨
+알고보니 body에만 적용하고 html에는 적용을 안했음 ㅠㅠ
+html에 100% body 100% = body 100vh 같은 결과였음
+
+### 배경화면과 박스 디자인
+### 회원가입 폼 꾸미기
+### 기술 블로그 -> 주제 업로드

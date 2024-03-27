@@ -1,0 +1,72 @@
+:root {
+    --main-color: #a1d1b8;
+    --sub-color: #208666;
+    --dark-color: #206d66;
+}
+.chat-screen__texts {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.chat-screen__texts > .text {
+    background-color: white;
+    width: 280px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 20px;
+}
+
+.chat-screen__view {
+    overflow-x: hidden;
+}
+.send>li {
+    align-self: end;
+    text-align: right;
+}
+.receive {
+
+}
+
+
+/* 태그를 사용하지 않고 의사요소를 사용하여 말풍선꼬리를 만들기 */
+.receive > .text::after{
+    content: "";
+    border-right: 16px solid white;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.receive > .text:hover {
+ background-color: var(--sub-color);
+ transition: background-color 1500ms 200ms ease-in;
+}
+.receive > .text:hover::after {
+ border-right: 16px solid var(--sub-color);
+ transition: border-right 1500ms 200ms ease-in;
+
+}
+.send > .text::after{
+    content: "";
+    border-left: 16px solid white;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+}
+
+.send > .text:hover {
+ background-color: var(--sub-color);
+ transition: background-color 1500ms 200ms ease-in;
+}
+.send > .text:hover::after {
+ border-left: 16px solid var(--sub-color);
+ transition: border-left 1500ms 200ms ease-in;
+
+}

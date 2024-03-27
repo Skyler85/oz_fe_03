@@ -66,6 +66,7 @@ body {
 /* 채팅 뷰어 설정 */
 .chat-screen__view {
     height: calc(100% - 80px);
+    padding-top: 10px;
     overflow-y: scroll;
 }
 

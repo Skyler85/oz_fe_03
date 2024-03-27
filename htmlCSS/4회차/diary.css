@@ -1,72 +1,98 @@
-/* 눈누에서 폰트 적용 */
-@font-face {
-    font-family: 'GangwonEduHyeonokT_OTFMediumA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduHyeonokT_OTFMediumA.woff') format('woff');
-    font-weight: normal;
+/* 구글 폰트 적용 */
+.nanum-myeongjo-regular {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
     font-style: normal;
-}
+  }  
 :root {
     --main-color: lavenderblush;
+    --shadow-color: #00000010;
+    --alpha-color: #00000050;
 }
 * {
     box-sizing: border-box;
-    font-family: 'GangwonEduHyeonokT_OTFMediumA';
-    font-size: 1.2em;
+    font-family: "Nanum Myeongjo", serif;
     margin: 0;
 }
+
+
 /* conteiner */
-html {
+html, body {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    overflow-y: auto;
+    background-color: #ffffff;
+    /* -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none; */
 }
 
 .container {
-    width: 600px;
-    height: calc(100% - 80px);
-    overflow: hidden;
-}
-/* header */
-.header {
-    width: 600px;
-    height: 80px;
-    position: fixed;
+    width: 30rem;
     margin: auto;
+}
+
+
+/* header */
+header.header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    box-shadow: 0px 5px 20px -18px rgba(20, 20, 20, .5);
+    width: 30rem;
+    height: 7rem;
+    border-bottom: .5px solid var(--shadow-color);
+    box-shadow: 0px 5px 20px -18px var(--alpha-color);
+    padding: 0 1rem;
+    
+}
+header.header h1{
+    font-size: 2rem;
 }
 
 /* main */
 .main {
-    width: 600px;
-    height: 100%;
-    margin-top: 80px;
+    width: 30rem;
+    margin-top: 2rem;
+}
+.diary-title{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    overflow-y: scroll;
+    align-items: flex-end;
+    padding: 0 1rem;
 }
-
-.date {
-    display: flex;
-    flex-direction: row;
-}
-.date>span {
+.diary-title__date {
     margin-left: auto;
     font-size: .8em;
 }
+.diary__contnets {
+    margin: auto;
+}
 
+.diary__contnets .gallery {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.diary__contnets .gallery img{
+    display: inline-flex;
+    height: 90%;
+    margin: auto 1rem;
+    border-radius: 20px;
+}
+
+.diary__contnets .text{
+    margin: 3rem 1rem;
+    line-height: 2.3rem;
+}
 /* footer */
 .footer {
-    width: 600px;
-    height: 150px;
+    width: 30rem;
+    height: 4rem;
     background-color: var(--main-color);
-    padding: 15px;
+    padding: 0 2rem;
     font-size: .5em;
+    margin-top: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

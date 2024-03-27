@@ -5,7 +5,6 @@
     font-style: normal;
   }  
 :root {
-    --main-color: lavenderblush;
     --shadow-color: #00000010;
     --alpha-color: #00000050;
 }
@@ -85,11 +84,17 @@ header.header h1{
     margin: 3rem 1rem;
     line-height: 2.3rem;
 }
+.to-do{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 2rem 2rem;
+    line-height: 3rem;
+}
 /* footer */
 .footer {
     width: 30rem;
     height: 4rem;
-    background-color: var(--main-color);
+    background-color: var(--shadow-color);
     padding: 0 2rem;
     font-size: .5em;
     margin-top: auto;

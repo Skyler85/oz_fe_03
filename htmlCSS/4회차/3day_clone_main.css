@@ -6,9 +6,12 @@
 }
 
 /* dailytoon */
+
 /* Part. 01 */
 .main-dairytoon{
-    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
 }
 .main-dairytoon__title{
     height: 50px;
@@ -33,8 +36,6 @@
     color: var(--main-color);
 }
 
-
-
 /* Part. 01*/
 .main-dairytoon__list ul.flex{
     justify-content: space-between;
@@ -48,32 +49,85 @@
 
 
 
+/* dailytoon list */
 
 .main-dairytoon__list ul li img{
     width: 230px;
     height: 300px;
-    border-radius: 7px;
-    border: .75px solid var(--shadow-color);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: var(--img-border);
 }
-.main-dairytoon__list ul li p{
-    vertical-align: center;
-}
-.main-dairytoon__list ul li span:first-child{
-    display: inline-block;
-    padding: 0px 3px;
-    font-size: xx-small;
-    color: red;
-    border: .75px solid red;
-    border-radius: 2px;
 
+.main-dairytoon__list ul li span:first-child::before{
+    content: "UP";
+    font-size: 12px;
+    color: red;
+    border: .5px solid red;
+    border-radius: 3px;
+    padding: 0 2px;
 }
-.main-dairytoon__list ul li span:nth-child(3){
+
+.main-dairytoon__list ul li span:first-child{
+    font-weight: 700;
+}
+.main-dairytoon__list ul li span:nth-child(2){
     display: block;
 }
 
 
-/* dailytoon list */
-/* missed list */
+/* Section */
+.sub-main{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+/* aside */
+.side-bar{
+    width: var(--aside-width);
+}
+
+/* content - toon */
+.content-toon{
+    width: var(--section-width)
+}
+
+/* toon - newest list */
+.toon-newest{
+
+}
+.toon-newest__header h2{
+    font-size: 20px;
+}
+.toon-newest__list .flex{
+    padding: 0;
+    margin-bottom: 40px;
+    justify-content: space-between;
+
+}
+.toon-newest__list ul img{
+    width: 160;
+    height: 207px;
+    border: var(--img-border);
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+}
+.toon-newest__list ul li{
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.toon-newest__list ul li p{
+    display: flex;
+    flex-direction: column;
+}
+.toon-newest__list ul li p span:first-child{
+    font-weight: 700;
+}
+
+
 /* hot list */
 /* dailytoon */
 /* dailytoon */

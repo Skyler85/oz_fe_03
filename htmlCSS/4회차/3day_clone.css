@@ -4,12 +4,15 @@
 
 :root{
     --body-width: 1190px;
+    --section-width: 840px;
+    --aside-width: 300px;
     --main-color: #21dd21;
     --gray-color: #808080;
     --shadow-color: #00000030;
     --black-color: #000000;
     --dark-shadow: #00000088;
-    --light-color: #ffffff;
+    --light-color: #f fffff;
+    --img-border: .75px solid var(--shadow-color);
 }
 *{
     box-sizing: border-box;

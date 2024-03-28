@@ -117,6 +117,7 @@
 .toon-newest__list ul li{
     list-style-type: none;
     font-size: 16px;
+    position: relative;
 }
 
 .toon-newest__list ul li p{
@@ -125,6 +126,16 @@
 }
 .toon-newest__list ul li p span:first-child{
     font-weight: 700;
+}
+
+.toon-newest__list ul li p span.count{
+    font-size:80px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    font-style: italic;
+    color: white;
+    text-shadow: 0px 5px #000, 5px 0 #000, 0 -5px #000, -5px 0 #000;
 }
 
 

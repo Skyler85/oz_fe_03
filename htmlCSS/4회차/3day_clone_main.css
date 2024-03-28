@@ -1,0 +1,81 @@
+/* main */
+.main{
+    flex-direction: column;
+    width: var(--body-width);
+    margin: auto;
+}
+
+/* dailytoon */
+/* Part. 01 */
+.main-dairytoon{
+    margin: auto;
+}
+.main-dairytoon__title{
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+
+}
+.main-dairytoon__title p{
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.main-dairytoon__title a, .main-dairytoon__title span{
+    font-size: 16px;
+    color: var(--dark-shadow);
+    font-weight: 500;
+
+}
+
+.main-dairytoon__title a.active{
+    color: var(--main-color);
+}
+
+
+
+/* Part. 01*/
+.main-dairytoon__list ul.flex{
+    justify-content: space-between;
+    padding: 0;
+}
+
+.main-dairytoon__list ul li{
+    list-style-type: none;
+}
+
+
+
+
+
+.main-dairytoon__list ul li img{
+    width: 230px;
+    height: 300px;
+    border-radius: 7px;
+    border: .75px solid var(--shadow-color);
+}
+.main-dairytoon__list ul li p{
+    vertical-align: center;
+}
+.main-dairytoon__list ul li span:first-child{
+    display: inline-block;
+    padding: 0px 3px;
+    font-size: xx-small;
+    color: red;
+    border: .75px solid red;
+    border-radius: 2px;
+
+}
+.main-dairytoon__list ul li span:nth-child(3){
+    display: block;
+}
+
+
+/* dailytoon list */
+/* missed list */
+/* hot list */
+/* dailytoon */
+/* dailytoon */
+/* dailytoon */
+/* dailytoon */

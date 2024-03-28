@@ -1,0 +1,32 @@
+@import "3day_clone_header.css";
+@import "3day_clone_main.css";
+@import "3day_clone_footer.css";
+
+:root{
+    --body-width: 1190px;
+    --main-color: #21dd21;
+    --gray-color: #808080;
+    --shadow-color: #00000030;
+    --black-color: #000000;
+    --dark-shadow: #00000088;
+    --light-color: #ffffff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: auto 20px;
+}
+
+.flex{
+    display: flex;
+}

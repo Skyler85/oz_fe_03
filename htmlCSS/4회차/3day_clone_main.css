@@ -5,9 +5,12 @@
     margin: auto;
 }
 
+.main .active{
+    color: var(--main-color);
+}
+
 /* dailytoon */
 
-/* Part. 01 */
 .main-dairytoon{
     width: 100%;
     margin-bottom: 20px;
@@ -32,11 +35,8 @@
 
 }
 
-.main-dairytoon__title a.active{
-    color: var(--main-color);
-}
 
-/* Part. 01*/
+
 .main-dairytoon__list ul.flex{
     justify-content: space-between;
     padding: 0;
@@ -76,16 +76,22 @@
 }
 
 
-/* Section */
+/*     --- Section ---     */
 .sub-main{
     width: 100%;
     height: 100%;
     justify-content: space-between;
 }
+.sub-main h2{
+    font-size: 22px;
+    margin: 20px 0;
+}
 
-/* aside */
-.side-bar{
-    width: var(--aside-width);
+.sub-main h4{
+    margin: 10px 0;
+}
+.sub-main h5{
+    font-weight: 400;
 }
 
 /* content - toon */
@@ -94,12 +100,6 @@
 }
 
 /* toon - newest list */
-.toon-newest{
-
-}
-.toon-newest__header h2{
-    font-size: 20px;
-}
 .toon-newest__list .flex{
     padding: 0;
     margin-bottom: 40px;
@@ -116,7 +116,6 @@
 }
 .toon-newest__list ul li{
     list-style-type: none;
-    font-size: 16px;
     position: relative;
 }
 
@@ -124,18 +123,75 @@
     display: flex;
     flex-direction: column;
 }
-.toon-newest__list ul li p span:first-child{
-    font-weight: 700;
-}
 
-.toon-newest__list ul li p span.count{
+
+.content-toon span.count{
     font-size:80px;
     position: absolute;
-    bottom: 20px;
-    left: 10px;
+    bottom: 45px;
+    left: 5px;
     font-style: italic;
     color: white;
     text-shadow: 0px 5px #000, 5px 0 #000, 0 -5px #000, -5px 0 #000;
+}
+
+
+
+/* aside */
+.side-bar{
+    width: var(--aside-width);
+}
+
+.side-bar .banner{
+    height: 250px;
+    border: var(--img-border);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.side-bar .banner img{
+    width: 270px;
+    object-fit: cover;
+}
+
+.side-bar .banner span{
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    background-color: #ffffff30;
+    color: #00000080;
+    padding: 0 3px;
+    border: 1px solid #00000050;
+    border-radius: 5px;
+
+}
+.popular__title{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #00000030;
+}
+
+.popular__content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.popular__content ul li{
+    margin: 15px 0;
+    flex-direction: row;
+}
+
+.popular__content img {
+    width: 60px;
+    border-radius: 5px;
+}
+
+.popular__content h3 {
+    display: block;
+    width: 50px;
+    padding: 28px 0;
+    text-align: center;
 }
 
 

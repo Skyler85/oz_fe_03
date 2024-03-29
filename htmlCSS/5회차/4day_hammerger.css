@@ -15,46 +15,95 @@ html, body{
 }
 
 .aside{
-    background-color: #00000040;
-    border-radius: 0 30px 30px 0;
-    width: 400px;
-    height: 100%;
+    background-color: #ffffff60;
+    border-radius: 0 0 30px 30px;
+    width: 100%;
+    height: 80px;
     color: white;
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .aside h1{
-    margin: 60px auto;
+    margin: 20px 40px;
+    width: 100px;
+    font-size: 32px;
 }
 
-.aside ul{
-    margin: 40px auto;
+.btn{
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
     padding: 0;
 }
-.aside ul li{
-    display: block;
+.btn>ul{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    padding: 50px 0 0 0;
+    width: 100%;
+    align-items: center;
+    background-color: #ffffff60;
+
+}
+.btn>ul li{
+    list-style-type: none;
+    width: 40%;
+    min-width: 100px;
+    border-radius: 30px;
+    height: 30px;
+    padding: 10px;
+}
+.aside h2{
+    height: 100%;
+}
+
+.aside>ul{
+    margin: 25px 30px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aside>ul li{
+    display: inline-block;
     width: 150px;
     height: 40px;
-    margin: 20px auto 60px;
     text-align: center;
     border-radius: 30px;
     padding: 12px;
 }
-
-.aside ul li.active{
+.aside ul li a{
+    color: white;
+    text-decoration: none;
+}
+.aside ul li:hover{
     background-image: url("images/banner.jpg");
     
 }
 
+
 @media (max-width: 768px) {
     .aside{
-        width: 80px;
-        background-color: #00000060;
+        height: 50px;
+        border-radius: 0 0 20px 20px;
         transform:translateX(0 0 3 3 )
     }
+    .aside h1, .aside>ul {
+        display: none;
+    }
+    .btn{
+        display: block;
+    }
+
+    .btn:hover ul{
+        display: flex;
+    }
+
 
 }

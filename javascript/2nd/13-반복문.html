@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반복문</title>
+  </head>
+  <body>
+    <script>
+      // 초기식, 조건식, 반복식
+      // 초기식에서 선언한 변수는 for문 밖에선 사용 불가!
+
+      /*         for(let i = 0; i < 5; i++){
+            document.write(`반복중.. 이다! ${i+1}번째! <br />`);
+        } */
+
+      /*  
+      let i = 0;
+      while (i < 100) {
+        document.write(`반복중이다! ${i + 1}번째! <br />`);
+        i++;
+      }
+ */
+
+      // while(confirm("반복 실행 할까요?")){}
+
+      for( let i = 2; i < 10 ; i++){
+        for(let j = 1; j < 10 ; j++){
+          console.log(`${i} * ${j} = ${i * j}`)
+        }
+        console.log('----------');
+      }
+
+
+    </script>
+  </body>
+</html>

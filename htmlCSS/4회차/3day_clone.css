@@ -12,12 +12,14 @@
     --black-color: #000000;
     --dark-shadow: #00000088;
     --light-color: #ffffff;
+    --banner-color: #feebf530;
     --img-border: .75px solid var(--shadow-color);
 }
 *{
     box-sizing: border-box;
     margin: 0;
     text-decoration: none;
+    color: var(--black-color);
 }
 
 html, body{

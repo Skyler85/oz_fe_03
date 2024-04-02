@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이벤트 & 핸들링</title>
+  </head>
+  <body>
+    <button id="span">SPAN</button>
+    <button id="strong">STRONG</button>
+    <button id="mark">MARK</button>
+    <hr />
+
+    <script>
+      const spanBtn = document.getElementById("span");
+      const strongBtn = document.getElementById("strong");
+      const markBtn = document.getElementById("mark");
+
+      const handleClick = function (event) {
+        switch (event.target.id) {
+          case "span":
+            const span = document.createElement("span");
+            span.textContent = "span추가! ";
+            document.body.append(span);
+            return;
+          case "strong":
+            const strong = document.createElement("strong");
+            strong.textContent = "strong추가! ";
+            document.body.append(strong);
+            return;
+          case "mark":
+            const mark = document.createElement("mark");
+            mark.textContent = "mark추가! ";
+            document.body.append(mark);
+            return;
+        }
+      }
+
+      spanBtn.addEventListener("click", handleClick);
+      strongBtn.addEventListener("click", handleClick);
+      markBtn.addEventListener("click", handleClick);
+    </script>
+  </body>
+</html>

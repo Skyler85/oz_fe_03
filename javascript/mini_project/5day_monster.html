@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>5day_monster</title>
+    <style>
+      strong{
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <div id="container"></div>
@@ -20,21 +25,28 @@
       if(attackDamage > 0){
 
           while(monsterHP > 0) {
-              monsterHP -= attackDamage; // hp 감소
-              attackCount++;
+            attackCount++;
+            
+            const p = document.createElement("p");
+            const span = document.createElement("span");
+            const strong = document.createElement("strong");
+            
+            
+            p.textContent = `몬스터를 ${attackCount}회 공격 했다!`;
+            if(monsterHP - attackDamage <= 0) {
+              attackDamage = monsterHP;
+            }
+            span.textContent = `HP : ${monsterHP} - ${attackDamage} => `;
+            container.appendChild(p);
+            
+            monsterHP -= attackDamage; // hp 감소
+              // 몬스터의 체력이 음수일때 강제로 0으로 출력하기
 
-              const p = document.createElement("p");
-              p.textContent = `몬스터를 ${attackCount}회 공격 했다!`;
-              container.appendChild(p);
 
-              const strong = document.createElement("strong");
               strong.textContent = `몬스터의 남은 HP는 ${monsterHP}입니다!`;
+              container.appendChild(span);
               container.appendChild(strong);
 
-              // 몬스터의 체력이 음수일때 강제로 0으로 출력하기
-              if(monsterHP < attackDamage) {
-                attackDamage = monsterHP;
-              }
 
           }
       } else {

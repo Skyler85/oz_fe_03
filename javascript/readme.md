@@ -21,6 +21,10 @@ ____
 
 05. Mini Project : 몬스터 잡기 게임
 
+▷ <a href="https://github.com/Skyler85/oz_fe_03/blob/main/javascript/mini_project/5day_monster.html">소스보기</a>
+
+▷ <a href="https://htmlpreview.github.io/?https://github.com/Skyler85/oz_fe_03/blob/main/javascript/mini_project/5day_monster.html">데모보기</a>
+
 ____
 
 ## chapter03
@@ -32,6 +36,10 @@ ____
 07. 이벤트 핸들링
 
 08. Mini Project : 회원가입 폼 만들기
+
+▷ <a href="https://github.com/Skyler85/oz_fe_03/blob/main/javascript/mini_project/8day_join.html">소스보기</a>
+
+▷ <a href="https://htmlpreview.github.io/?https://github.com/Skyler85/oz_fe_03/blob/main/javascript/mini_project/8day_join.html">데모보기</a>
 
 ____
 

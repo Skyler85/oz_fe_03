@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>타이머 메소드</title>
+  </head>
+  <body>
+    <p id="now"></p>
+    <button id="stop">멈춰</button>
+    
+    <script>
+      // serTimeout(실행할_함수, ms_단위의_시간)
+      // setInterval(반복_실행할_함수, ms_단위의_시간)
+      // clearInterval(반환값을 받는 변수명)
+
+      //   setTimeout(function () {
+      //     alert("타임아웃");
+      //   }, 3000);
+      const stop = document.getElementById("stop");
+      const play = document.getElementById("play");
+      let timeId;
+
+      function timer() {
+        const p = document.getElementById("now");
+        const now = new Date();
+
+        let year = now.getFullYear();
+        let month = now.getMonth() + 1;
+        let day = now.getDate();
+        let hour = now.getHours();
+        let min = now.getMinutes();
+        let sec = now.getSeconds();
+
+        p.textContent = `${year}/${month}/${day} ${hour}:${min}:${sec}`;
+      }
+
+      timeId = setInterval(timer, 1000);
+
+      stop.addEventListener("click", () => {
+        clearInterval(timeId);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        // JSON 형식 : 자바스크립트 객체 리터럴을 문자열 형식으로 변환하는 것
+        const meal = {
+            what: "제육볶음",
+            who: "아내",
+            when: "어제 저녁",
+        }
+
+        console.log(typeof meal)
+
+        // 파이썬으로 전달 : 파이썬은 자바스크립트와 같은 객체타입이 존재하지 않는다.
+        // 따라서 공통 타입인 문자열 형식으로 변환하여 전달하여야 한다.
+
+        const meal1 = `{
+            "what": "제육볶음",
+            "who": "아내",
+            "when": "어제 저녁",
+        }`
+        console.log(typeof meal1);
+
+
+        // 짧은 메소드의 경우 수기로 변경 할 수 있으나 대부분은 많은 작업을 거치게 된다.
+        const meal2 = JSON.stringify(meal);
+        console.log(meal2)
+        console.log(typeof meal2)
+
+        const meal3 = JSON.parse(meal2)
+        console.log(meal3);
+        console.log(typeof meal3);
+
+    </script>
+    
+</body>
+</html>

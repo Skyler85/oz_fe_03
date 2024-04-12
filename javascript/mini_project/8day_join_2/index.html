@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>집사 등록</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <header class="header">
+        <div class="icon_back" id="back">
+          <a href="#">
+            <span>
+              <i class="fa-solid fa-angle-left" style="color: #969696"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+      <main class="main">
+        <h1>집사 등록 :) 🐶 🐥 🐱 🐸 🕷️</h1>
+        <form action="" id="form">
+          <div class="group">
+            <div>
+              <label>집사명 <small>*</small></label>
+              <input
+                type="text"
+                placeholder="예) 세바스찬"
+                class="input-text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div>
+              <label>집사등록번호 <small>*</small></label>
+              <div class="grouping">
+                <input
+                  type="text"
+                  pattern="[0-9]*"
+                  name="birth"
+                  id="birth"
+                  class="input-text"
+                  minlength="6"
+                  maxlength="6"
+                  placeholder="only Number!"
+                  required
+                />
+                <input
+                  type="password"
+                  pattern="[0-9]*"
+                  name="reg"
+                  id="reg"
+                  class="input-text"
+                  minlength="7"
+                  maxlength="7"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <label>아이디 <small>*</small></label>
+            <input
+              type="text"
+              name="id"
+              id="id"
+              class="input-text"
+              placeholder="4-8자를 입력하세요"
+              minlength="4"
+              maxlength="8"
+              required
+            />
+          </div>
+          <div>
+            <label>비밀번호 / 확인 <small>*</small></label>
+            <div class="grouping">
+              <input
+                type="password"
+                name="password"
+                class="input-text"
+                id="password"
+                required
+              />
+              <input
+                type="password"
+                name="passwordRetype"
+                class="input-text"
+                id="passwordRetype"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <label>이메일 <small>*</small></label>
+            <div class="grouping">
+              <input
+                type="text"
+                name="email1"
+                id="email1"
+                class="input-text"
+                required
+              />
+              <select name="email2" id="email2">
+                <option selected disabled>선택</option>
+                <option value="gmail.com">구글</option>
+                <option value="naver.com">네이버</option>
+                <option value="hanmail.net">한메일</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label>주소 <small>*</small></label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              class="input-text"
+              required
+            />
+          </div>
+          <div>
+            <label>성별 <small>*</small></label>
+            <div class="radio">
+              <div>
+                <input type="radio" name="gender" id="male" />남
+              </div>
+              <div>
+                <input type="radio" name="gender" id="female" />여
+              </div>
+            </div>
+          </div>
+          <div>
+            <label>개인정보 동의</label>
+            <div>
+              <input type="checkbox" name="agree" id="agree" required />
+              <span>개인정보를 이용함에 동의합니다. <small>(필수)</small></span>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button type="reset" class="btn-prev">Reset</button>
+            <button type="submit" class="btn-prev">Submit</button>
+          </div>
+        </form>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2cb7ce3cc7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

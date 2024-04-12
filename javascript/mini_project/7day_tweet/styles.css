@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f2f5;
+  color: #444;
+}
+#input_container {
+  display: flex;
+}
+#tweetInput {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #1da1f2;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 16px;
+}
+
+#postTweet {
+  padding: 10px 20px;
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s;
+  width: 120px;
+  margin-left: 12px;
+}
+
+#postTweet:hover {
+  background-color: #1482c6;
+}
+
+#tweets_container {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+section {
+  display: flex;
+}
+
+.tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e8ed;
+  order: 1;
+  width: 100%;
+  margin-right: 15px;
+}
+
+.tweet:last-child {
+  border-bottom: none;
+  width: 100%;
+}
+
+.tweet-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.like-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #657786;
+  padding: 0;
+}
+
+.like-button:hover {
+  color: #1da1f2;
+}
+
+.like-counter {
+  font-size: 16px;
+  color: #657786;
+  margin-left: 15px;
+}
+
+.list {
+  font-size: 16px;
+}
+
+/* insert */
+.avartar {
+  height: 100%;
+  order: 0;
+  padding: 15px;
+}
+.avartar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e1e1e1e1;
+  background-color: gray;
+}
+.author {
+  font-size: 12px;
+  font-weight: 700;
+}
+.timestamp {
+  font-size: 8px;
+  color: gray;
+}
+
+.icon-container{
+  order: 3;
+  width: calc(100%-30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+}
+
+/* svg{
+  pointer-events: none;
+} */
+
+.like-box{
+  width: 40px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+

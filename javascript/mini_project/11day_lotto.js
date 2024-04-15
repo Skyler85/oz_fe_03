@@ -5,6 +5,7 @@ const numbersDiv = document.querySelector(".numbers");
 const drawButton = document.querySelector("#draw");
 const resetButton = document.querySelector("#reset");
 let lottoNumbers = [];
+const colors = ['orange', 'skyblue', 'red', 'purple', 'green'];
 
 // 오늘 날짜 가져오기
 const today = new Date();
@@ -17,35 +18,25 @@ todaySpan.textContent = `${year}년 ${month}월 ${date}일 `;
 function paintNumber(number) {
   const eachNumDiv = document.createElement("div");
   eachNumDiv.classList.add("eachnum");
+  let colorIndex = Math.floor(number / 10);
+  eachNumDiv.style.backgroundColor = colors[colorIndex];
   eachNumDiv.textContent = number;
   numbersDiv.appendChild(eachNumDiv);
 }
 
 // 랜덤 숫자 배열 생성
-function makeNum() {
-  if (lottoNumbers.length !== 0) {
-    () => lottoNumbers.slice(0, 6);
-    numbersDiv.innerHTML = "";
-  }
-
-  for (let i = 0; i < 6; i++) {
-    let rn = Math.floor(Math.random() * 45) + 1;
-    for (let j in lottoNumbers) {
-      while (rn == lottoNumbers[j]) {
-        let rn = Math.floor(Math.random() * 45) + 1;
-        lottoNumbers.push(rn);
-        paintNumber(rn);
-      }
+drawButton.addEventListener('click', function () {
+  while (lottoNumbers.length < 6) {
+    let ran = Math.floor(Math.random() * 45) + 1;
+    if (lottoNumbers.indexOf(ran) === -1) {
+      lottoNumbers.push(ran);
+      paintNumber(ran);
     }
   }
-}
-if (lottoNumbers.indexOf(rn) === -1) {
-}
+});
 
-// 클릭하면 랜덤 숫자 여섯개가 배열에 추가된다
-drawButton.addEventListener("click", makeNum());
-
+// 다시 버튼 클릭 이벤트 핸들링
 resetButton.addEventListener("click", function () {
-  lottoNumbers.slice(0, 6);
+  lottoNumbers.splice(0, 6);
   numbersDiv.innerHTML = "";
 });

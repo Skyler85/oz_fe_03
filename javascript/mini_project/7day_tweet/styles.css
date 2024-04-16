@@ -85,10 +85,6 @@ section {
   padding: 0;
 }
 
-.like-button:hover {
-  color: #1da1f2;
-}
-
 .like-counter {
   font-size: 16px;
   color: #657786;
@@ -135,9 +131,12 @@ section {
   height: 20px;
 }
 
-/* svg{
+.svg{
   pointer-events: none;
-} */
+}
+.svg:hover #like{ /* hover시 작동 안함 */
+  fill: #1da1f2;
+}
 
 .like-box{
   width: 40px;

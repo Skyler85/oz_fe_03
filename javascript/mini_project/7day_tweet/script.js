@@ -96,7 +96,7 @@ function like(iconContainer,paintTw) {
   const likeIcon = document.createElement("object");
   likeIcon.setAttribute("type", "image/svg+xml");
   likeIcon.setAttribute("data", "img/like_JunGSa.svg");
-  likeIcon.setAttribute("class", "icon");
+  likeIcon.setAttribute("class", "icon svg");
   likeBtn.appendChild(likeIcon);
   
   
@@ -107,7 +107,6 @@ function like(iconContainer,paintTw) {
   // 좋아요 버튼 카운트
   likeBtn.addEventListener('click', (e) => {
     stackedCount++;
-    console.log(e.target);
     return (likeCount.textContent = `${stackedCount}`);
   });
   
@@ -149,7 +148,7 @@ function coments(tweet) {
   share.setAttribute("type", "image/svg+xml");
   share.setAttribute("data", "img/share_Freepik.svg");
   share.setAttribute("class", "icon");
-  
+
   
   // icon 요소 각 부모요소에 배치
   iconContainer.appendChild(chat);
@@ -188,5 +187,4 @@ function paintTw() {
 
 document.addEventListener('click',function(event){
   if(!event.target.closest('.like-button')) RTCPeerConnection;
-  console.log(event.target);
 }, false);

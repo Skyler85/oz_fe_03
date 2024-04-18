@@ -131,10 +131,11 @@ section {
   height: 20px;
 }
 
-.svg{
+/* .svg{
   pointer-events: none;
-}
-.svg:hover #like{ /* hover시 작동 안함 */
+} */
+
+.like-button:hover{ /* svg 자체가 아닌 상위요소(버튼)을 통해 컨트롤 */
   fill: #1da1f2;
 }
 

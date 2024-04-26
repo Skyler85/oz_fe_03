@@ -1,0 +1,19 @@
+{
+  "name": "chapter02",
+  "version": "1.0.0",
+  "description": "챕터2 강의에 대한 소스입니다.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "skyler85",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

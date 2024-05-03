@@ -5,6 +5,8 @@ const passport = require("passport");
 
 
 const User = require("../src/models/users.model");
+require('nodemailer')
+const sendMail = require("../src/mail/mail");
 
 // 회원 로그인 페이지
 usersRouter.post("/login", (req, res, next) => {
@@ -48,9 +50,9 @@ usersRouter.post('/signup',async (req, res) => {
     try {
         // user 컬렉션에 유저를 저장합니다.
         await user.save();
-        return res.status(200).json({
-            success: true,
-        })
+        //? send Email (*)
+        sendMail(user.email,user.email,'welcome');
+        res.redirect('/');
     } catch (error) {
         console.log(error);
     }

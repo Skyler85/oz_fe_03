@@ -14,6 +14,11 @@ const userSchema = mongoose.Schema({
         type: String,
         unique: true,
         sparse: true, // googleId: null -> 중복 방지
+    },
+    kakaoId: {
+        type: String,
+        unique: true,
+        sparse: true, // googleId: null -> 중복 방지
     }
 })
 const saltRounds = 10;

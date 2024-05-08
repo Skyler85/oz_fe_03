@@ -1,0 +1,66 @@
+const cookieToken = require("../utils/cookieToken");
+const User = require('../models/User');
+
+exports.register = async (req, res) => {
+    try {
+        const { name, email, password } = req.body;
+        document.querySelector('body').innerHTML = `name:${name}, email: ${email}`
+        if (!email || !password || !name) {
+            return res.status(400).json({
+                message: "Name, email and password are required"
+            })
+        }
+
+        let user = await User.findOne({ email });
+
+        if (user) {
+            return res.status(400).json({
+                message: "User already exists"
+            })
+        }
+
+        user = await User.create({
+            name, email, password
+        })
+
+
+        cookieToken(user, res)
+    } catch (error) {
+        res.status(500).json({
+            message: "Internal Server Error",
+            error: error
+        })
+    }
+}
+
+exports.login = async (req, res) => {
+    try {
+        const {email, password} = req.body;
+
+        if(!email || !password) {
+            return res.status(400).json({
+                message: "Email and password re required"
+            })
+        }
+        const user = await User.findOne({ email });
+
+        if (!user) {
+            return res.status(400).json({
+                message: "User not found"
+            })
+        }
+
+        const isPasswordCorrect = await user.isValidatedPassword(password);
+        if(!isPasswordCorrect) {
+            return res.status(401).json({
+                message: "Invalid password"
+            })
+        }
+        cookieToken(user, res)
+    } catch (error) {
+        res.status(500).json({
+            message : "Internal server error",
+            error: error
+        })
+    }
+}

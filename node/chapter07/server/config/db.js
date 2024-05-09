@@ -1,6 +1,4 @@
 const mongoose = require("mongoose");
-const { collection } = require("../models/User");
-require('dotenv').config();
 
 const connectWithDB = () => {
     mongoose

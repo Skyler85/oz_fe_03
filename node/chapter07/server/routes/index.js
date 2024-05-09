@@ -1,19 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
 const cloudinary = require('cloudinary').v2;
-const upload = multer({ dest: 'tmp'});
+const multer = require('multer');
+const upload = multer({ dest: 'tmp/' });
 
-router.post('/upload', upload.array('photos', 100), async (req,res) => {
+router.post('/upload', upload.array('photos', 100), async (req, res) => {
     try {
         let imageArray = [];
 
-        for (let index = 0; index < req.files.length; index++){
+        for (let index = 0; index < req.files.length; index++) {
             let { path } = req.files[index];
             const result = await cloudinary.uploader.upload(path, {
                 folder: 'Airbnb/Places'
             });
-            imageArray.push(result.secure_url);
+
+            imageArray.push(result.secure_url);            
         }
 
         res.status(200).json(imageArray);
@@ -22,7 +23,6 @@ router.post('/upload', upload.array('photos', 100), async (req,res) => {
             error,
             message: "Internal Server Error"
         });
-        
     }
 })
 

@@ -1,4 +1,5 @@
 import "../styles/ShoppingForm.css";
+import { PropTypes } from 'prop-types';
 // 장 볼 아이템과 개수를 입력하는 form을 만듭니다.
 
 const ShoppingForm = ({ input, handleChange, handleSubmit }) => {
@@ -33,5 +34,11 @@ const ShoppingForm = ({ input, handleChange, handleSubmit }) => {
         </div>
     );
 };
+
+ShoppingForm.propTypes = {
+    input: PropTypes.string.isRequired,
+    handleChange: PropTypes.func.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
+}
 
 export default ShoppingForm;

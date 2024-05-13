@@ -1,4 +1,12 @@
+.title-input {
+  flex-grow: 1;
+  text-align: left;
+}
+.title-input input {
 
+  font-size: 16px;
+  line-height: 24px;
+}
 
 .list-item {
     font-size: 16px;

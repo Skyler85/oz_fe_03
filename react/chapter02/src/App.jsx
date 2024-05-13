@@ -1,6 +1,4 @@
 import "./styles/App.css";
-import ShoppingForm from "./components/ShoppingForm";
-import ShoppingList from "./components/ShoppingList";
 import { useState } from "react";
 import SideBar from './components/SideBar';
 import ContentBox from "./components/ContentBox";
@@ -66,6 +64,7 @@ function App() {
     // task를 수정하는 함수
     const handleEdit = (id) => {
         console.log(id);
+        
         setIsEditing(!isEditing);
         // const newTasks = tasks.map((task) => {
         //     if (task.id === id) {
@@ -83,7 +82,7 @@ function App() {
     return (
         <>
             <SideBar />
-            <ContentBox input={input} handleChange={handleChange} handleSubmit={handleSubmit} tasks={tasks} handleDelete={handleDelete} handleEdit={handleEdit} />
+            <ContentBox input={input} handleChange={handleChange} handleSubmit={handleSubmit} tasks={tasks} setTasks={setTasks} handleDelete={handleDelete} handleEdit={handleEdit} />
         </>
     );
 }

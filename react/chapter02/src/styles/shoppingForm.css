@@ -1,0 +1,75 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select {
+    width: 80px;
+    height: 40px;
+    /* border: 1px solid var(--mainSoft); */
+    border-radius: 12px 0 0 12px;
+    padding: auto;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--mainWhite);
+}
+.wrapper {
+    position: relative;
+}
+.categories {
+    position: absolute;
+    /* hidden */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.switch_label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+    background: white;
+}
+
+/* checking style */
+#person~.switch_label {
+    background: rgba(213, 110, 255, .5);
+}
+#person:checked + .switch_label {
+    background: rgb(213, 110, 255);
+}
+#study~.switch_label {
+    background: rgba(170, 110, 255, .5);
+}
+#study:checked + .switch_label {
+    background: rgb(170, 110, 255);
+}
+#work~.switch_label {
+    background: rgba(80, 110, 255, .5);
+}
+#work:checked + .switch_label {
+    background: rgb(80, 110, 255);
+}
+
+/*  input fields */
+
+.form input[type="text"] {
+    max-width: 400px;
+    height: 40px;
+    /* border: 1px solid var(--mainSoft); */
+    border: none;
+    border-radius: 0 12px 12px 0;
+    padding: 10px;
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+/*  submit fields */
+input~button {
+    display: none;
+}

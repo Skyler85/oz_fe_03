@@ -17,7 +17,6 @@ const ExpenseList = () => {
     )
     setFilteredExpenses(searchResults)
   }
-  console.log(expenses)
   return (
     <>
       <input type='text' className='form-control' placeholder='검색하기...' onChange={handleChange}/>

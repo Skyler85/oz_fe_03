@@ -5,6 +5,11 @@
   padding: 2rem;
   text-align: center;
 }
+.counter-box {
+  border: 1px solid white;
+  padding: 50px 10px;
+  border-radius: 20px;
+}
 
 div button {
   margin-right: 10px;

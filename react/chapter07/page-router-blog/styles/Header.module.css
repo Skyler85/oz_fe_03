@@ -1,0 +1,12 @@
+.nav {
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    padding: 20px;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
